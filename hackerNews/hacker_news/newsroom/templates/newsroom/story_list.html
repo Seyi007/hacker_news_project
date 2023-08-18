@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Stories</h2>
+  <ul>
+      {% for story in object_list %}
+        <li> <a href="{{ story.get_absolute_url }}">{{ story.title }}</a> by {{ story.by }}
+        <p> id: {{ story.id }} | time: {{ story.time }} | score: {{ story.score }} | descendant: {{ story.descendant }} | </p>
+        </li> 
+      {% endfor %}
+  </ul>
+{% endblock %}

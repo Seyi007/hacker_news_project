@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Title:</h1> {{ ask.title }}
+
+  <p> {{ ask.ask_id }} {{ ask.text }} {{ ask.score }} {{ ask.type }} {{ ask.time }} </p>
+  <!-- ask detail link not yet defined -->
+  <div style="margin-left:20px;margin-top:20px">
+      <p> {{ ask.url. }}</p>
+      <p class="text-muted">{{ ask.ask_id }}</p>
+  </div>
+{% endblock %}

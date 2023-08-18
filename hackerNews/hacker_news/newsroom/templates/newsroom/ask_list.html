@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Asks</h2>
+  <ul>
+      {% for ask in object_list %}
+        <li> <a href=" {{ ask.get_absolute_url }}">{{ ask.title }}</a> by {{ ask.by }}
+        <p> {{ ask.text }} id: {{ ask.ask_id }} | time: {{ ask.time }} | score: {{ ask.score }} | descendant: {{ ask.descendant }} | link: <a href="{{ ask.url }}"> {{ ask.url }}</a> </p>
+        </li> 
+      {% endfor %}
+  </ul>
+{% endblock %}

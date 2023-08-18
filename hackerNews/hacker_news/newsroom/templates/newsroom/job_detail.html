@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Title:</h1> {{ job.title }}
+
+  <p> {{ job.job_id }} {{ job.text }} {{ job.score }} {{ job.type }} {{ job.time }} </p>
+  <!-- job detail link not yet defined -->
+  <div style="margin-left:20px;margin-top:20px">
+      <p> {{ job.url. }}</p>
+      <p class="text-muted">{{ job.job_id }}</p>
+  </div>
+{% endblock %}

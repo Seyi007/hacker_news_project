@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Hacker News BT</h1>
+  <p>
+    Welcome to Hacker News BT, a website developed by
+    <em>Seyi Kuforiji</em>!
+  </p>
+  <h2>Enjoy all exciting harcker news content</h2>
+  <p>Newsroom has the following number of item at this time</p>
+  <ul>
+    <li><strong>Stories:</strong> {{ num_stories }}</li>
+    <li><strong>Jobs:</strong> {{ num_jobs }}</li>
+    <li><strong>Asks:</strong> {{ num_asks }}</li>
+  </ul>
+{% endblock %}

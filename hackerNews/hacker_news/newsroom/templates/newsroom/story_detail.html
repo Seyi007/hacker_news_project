@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Title:</h1> {{ story.title }}
+
+  <p>By: {{ story.comments }} {{ story.text }} {{ story.score }} {{ story.type }}</p>
+  <!-- story detail link not yet defined -->
+  <p> Read here link: <a href="{{ story.url }}"> {{ story.url }}</a> by: {{ story.by }}</p>
+  <div style="margin-left:20px;margin-top:20px">
+      <p> {{ story.url. }}</p>
+      <p class="text-muted"></p>
+  </div>
+{% endblock %}

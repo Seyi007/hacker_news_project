@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Jobs</h2>
+  <ul>
+      {% for job in object_list %}
+        <li> <a href="{{ job.get_absolute_url }}">{{ job.title }}</a> by {{ job.by }}
+        <p> {{ job.text }} id: {{ job.job_id }} | time: {{ job.time }} | score: {{ job.score }} | descendant: {{ job.descendant }} | link: <a href="{{ job.url }}">  {{ job.url }}</a> </p>
+        </li> 
+      {% endfor %}
+  </ul>
+{% endblock %}
