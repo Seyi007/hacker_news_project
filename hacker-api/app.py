@@ -10,11 +10,6 @@ url = os.getenv("DATABASE_URL")
 connection = psycopg2.connect(url)
 
 
-@app.get("/")
-def home():
-    return "hello world"
-
-
 
 INSERT_story_RETURN_ID = "INSERT INTO newsroom_story(story_type, by, kids, time, url, score, title, descendant) VALUES (%s, %s, %i, current_timestamp, %s, %i, %s, %i) RETURNING id;"
 @app.route("/api/story", methods=["POST"])
